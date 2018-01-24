@@ -1,4 +1,4 @@
-package classes;
+package classes.parents;
 
 public class Person
 {
@@ -6,6 +6,7 @@ public class Person
     String lastName;
     String fullName;
 
+    // Constructor
     public Person(String firstName, String lastName)
     {
         this.firstName = firstName;
@@ -14,6 +15,7 @@ public class Person
         fullName = firstName + " " + lastName;
     }
 
+    // Properties setters
     public void setFirstName(String firstName)
     {
         this.firstName = firstName;
@@ -24,6 +26,7 @@ public class Person
         this.lastName = lastName;
     }
 
+    // Property getter
     public String getFullName()
     {
         return fullName;

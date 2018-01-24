@@ -1,6 +1,6 @@
 package classes.children;
 
-import classes.Person;
+import classes.parents.Person;
 
 import java.util.Locale;
 import java.util.Random;

@@ -1,7 +1,7 @@
 package classes.children;
 
 import classes.Group;
-import classes.Person;
+import classes.parents.Person;
 import classes.Students;
 
 import java.util.ArrayList;
