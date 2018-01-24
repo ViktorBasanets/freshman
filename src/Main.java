@@ -26,7 +26,7 @@ public class Main
                         new Student("Oleksandra", "Styigailo"), new Student("Sophia", "Kravchenko"),
                         new Student("Ulyana", "Minyailo"), new Student("Julia", "Stepanets") } );
 
-        Group groupFreshman = new Group("", allStudents);
+        Group groupFreshman = new Group("Prefix2018", allStudents);
         groupFreshman.setHeadman( allStudents.chooseHeadman() );
 
         Professor professor = new Professor("Vasil", "Kravtsov", groupFreshman);
