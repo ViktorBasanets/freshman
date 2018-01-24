@@ -2,12 +2,15 @@ package classes;
 
 import classes.children.Student;
 
+// This class is needed to identify
+// the missing students by the professor
 public class Group
 {
     String groupName;
     Students allStudents;
     Student headman;
 
+    // Constructor
     public Group(String groupName, Students students)
     {
         this.groupName = groupName;
@@ -15,6 +18,7 @@ public class Group
         this.headman = new Student("", "");
     }
 
+    // Properties Getter and Setter
     public String getGroupName()
     {
         return groupName;

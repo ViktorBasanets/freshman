@@ -2,15 +2,28 @@ package classes;
 
 import classes.children.Student;
 
+/*****************************************************
+    This class is defined for the further forming
+    of a students group with some specific methods
+    such as the one that determines the headman
+    according to his personal qualities.
+
+    But in my opinion in this context,
+    we can do without it :)
+******************************************************/
+
 public class Students
 {
+    // Students list
     private Student [] students;
 
+    // Constructor
     public Students(Student[] students)
     {
         this.students = students;
     }
 
+    // Properties Getter and Setter
     public Student [] getStudents()
     {
         return students;
@@ -21,16 +34,18 @@ public class Students
         this.students = students;
     }
 
+    // Selection algorithm by the max value
+    // of the criterion
     public Student chooseHeadman()
     {
         Student headman = students[0];
-        double max = criterion(headman);
+        double maxValue = criterion(headman);
         for(Student student : getStudents())
         {
             double temp = criterion(student);
-            if(max < temp) {
+            if(maxValue < temp) {
                 headman = student;
-                max = temp;
+                maxValue = temp;
             }
         }
         return headman;

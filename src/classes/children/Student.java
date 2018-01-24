@@ -5,18 +5,23 @@ import classes.parents.Person;
 import java.util.Locale;
 import java.util.Random;
 
+// This class represents the student
 public class Student extends Person
 {
+    // This fields needed for choice criterion
     double academicPerformance;
     double socialActivity;
     double communicability;
     double initiative;
     double organizationalAbilities;
 
+    // Constructor
     public Student(String firstName, String lastName)
     {
+        // Calling the base class constructor
         super(firstName, lastName);
 
+        /****** Hardcode which initializing fields the random values ******/
         Random rand = new Random();
         double min = 4.0, max = 12.0;
 
@@ -25,9 +30,10 @@ public class Student extends Person
         this.communicability = min + rand.nextDouble() * (max - min);
         this.initiative = min + rand.nextDouble() * (max - min);
         this.organizationalAbilities = min + rand.nextDouble() * (max - min);
+        /******************************************************************/
     }
 
-
+    // Properties, Getters and Setters
     public double getAcademicPerformance()
     {
         return academicPerformance;
@@ -78,6 +84,7 @@ public class Student extends Person
         this.organizationalAbilities = organizationalAbilities;
     }
 
+    // Method, which needed for testing
     public void show()
     {
         System.out.println( getFullName() + ", " +
